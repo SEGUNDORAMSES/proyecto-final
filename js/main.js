@@ -4,13 +4,14 @@ import{mostrarhtml} from "/js/crearhtml.js"
 
 document.addEventListener('DOMContentLoaded', ev => {
     mostrarhtml()
+    mostrar_datos_configuracion()
 })
 
 
 
-function mostrat_datos_configuracion() {
+function mostrar_datos_configuracion() {
 //truco//!fetch
-let url;
+let url="/js/Configuraciones.json"
 fetch(url)
 
     .then(response => response.json())
