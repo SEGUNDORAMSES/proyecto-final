@@ -1,5 +1,21 @@
 //alert("working")
 //navbar
+document.addEventListener('DOMContentLoaded', ev => {
+    mostrarhtml()
+})
+
+function mostrarhtml() {
+let footer=document.getElementById("Footer").innerHTML=crear_footer();
+let navbar=document.getElementById("navbar").innerHTML=crear_navbar();
+let noticias= document.getElementById("Noticias"),innerHTML=crear_tarjetas_noticias();   
+
+
+}
+
+
+
+
+
 function crear_navbar() {
 
     let html = ` <a class="navbar-brand" href="#">
@@ -61,3 +77,5 @@ function crear_tarjetas_noticias() {
 
 
 }
+
+
