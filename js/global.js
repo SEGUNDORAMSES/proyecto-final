@@ -47,7 +47,7 @@ const crear_navbar = (data) => {
 }
 
 //footer
-const crear_footer = () => {
+const crear_footer = (data) => {
 
     let html = ` <h3>Derechos de Autor de NoticiasTecnológicas</h3>
           <p>Sigue a NoticiasTecnológicas</p>
