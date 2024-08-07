@@ -10,7 +10,7 @@ export function mostrarhtml() {
     
     
     
-    function crear_navbar() {
+    const crear_navbar=()=>{
     
         let html = ` <a class="navbar-brand" href="#">
             <img src="img/1-Logo.png" alt="Logo NoticiasTecnológicas" class="navegacion-principal__marca">
@@ -40,7 +40,7 @@ export function mostrarhtml() {
     }
     
     //footer
-    function crear_footer() {
+  const crear_footer=()=> {
     
         let html = ` <h3>Derechos de Autor de NoticiasTecnológicas</h3>
           <p>Sigue a NoticiasTecnológicas</p>
@@ -55,7 +55,7 @@ export function mostrarhtml() {
     }
     
     //main-seccion 1 noticias
-    function crear_tarjetas_noticias() {
+   const crear_tarjetas_noticias=()=> {
         let html = ` <section class=" banner  col-lg-4 ">
               <div class="card h-100">
                 <img src="img/1-Noticia.jpg" class="card-img-top" alt="...">
