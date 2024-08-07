@@ -5,8 +5,8 @@ export async function mostrarhtml() {
 
 
     if (Datos) {
-        let footer = document.getElementById("Footer").innerHTML = crear_footer();
-        let navbar = document.getElementById("navbar").innerHTML = crear_navbar();
+        let footer = document.getElementById("Footer").innerHTML = crear_footer(Datos.footer);
+        let navbar = document.getElementById("navbar").innerHTML = crear_navbar(Datos.navbar);
     }
 
 
@@ -51,12 +51,13 @@ const crear_footer = (data) => {
 
     let html = ` <h3>Derechos de Autor de NoticiasTecnológicas</h3>
           <p>Sigue a NoticiasTecnológicas</p>
-          <ul class="list-inline enlaces-pie" id="ListaFooter">
-            <!-- Aquí se insertarán los elementos del pie de página <li>términos condiciones</li> -->
-            <a href="https://facebook.com" class="mx-2"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://twitter.com" class="mx-2"><i class="fab fa-twitter"></i></a>
-            <a href="https://linkedin.com" class="mx-2"><i class="fab fa-linkedin"></i></a>
-          </ul>`
+          <ul class="list-inline enlaces-pie" id="ListaFooter">`
+           data.forEach(element => {
+         html +=`<a href="${element.enlace}" class="mx-2"><i class="${element.claseDeCss}">${element.nombre}</i></a>`   
+           });
+            
+ 
+         html += `</ul>`
 
     return html
 }
