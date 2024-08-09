@@ -3,26 +3,26 @@
 {
   "navbar": [
     {
-      "nombre": "Inicio2",
-      "enlace": "#",
+      "nombre": "Inicio",
+      "enlace": "inicio.html",
       "activo": true,
       "claseDeCss": "nav-item nav-link"
     },
     {
-      "nombre": "Noticias",
-      "enlace": "#Noticias",
+      "nombre": "tabla usuarios",
+      "enlace": "tabla_usuarios.html",
       "activo": false,
       "claseDeCss": "nav-item nav-link"
     },
     {
-      "nombre": "Banner1",
-      "enlace": "#Banner1",
+      "nombre": "tabla rick",
+      "enlace": "tabla-rick.html",
       "activo": false,
       "claseDeCss": "nav-item nav-link"
     },
     {
-      "nombre": "Banner2",
-      "enlace": "#Banner2",
+      "nombre": "registro",
+      "enlace": "registro.html",
       "activo": false,
       "claseDeCss": "nav-item nav-link"
     },

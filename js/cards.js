@@ -1,7 +1,9 @@
 
 import { obtener_datos_Apirick } from "/js/SERVICIOS_CONFIGURACION.js";
 
-
+document.addEventListener('DOMContentLoaded', ev => {
+  mostrarcard()
+})
 export const mostrarcard= async()=> {
     const Datos = await obtener_datos_Apirick();
 
